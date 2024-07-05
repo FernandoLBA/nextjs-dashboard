@@ -1,4 +1,5 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
+// ? CLX es una librería que permite agregar y cambiar clases a los elementos html
 import clsx from 'clsx';
 
 export default function InvoiceStatus({ status }: { status: string }) {
