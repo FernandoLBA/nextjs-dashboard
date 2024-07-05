@@ -2,6 +2,15 @@ import bcrypt from 'bcrypt';
 import { db } from '@vercel/postgres';
 import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
+/*
+ ==================================================
+Esta es una ruta que va dentro de /app, la cual puede 
+ser accedida desde el browser localhost:3000/seed
+Esta función carga datos en la base de datos creada
+en Vercel Postgres.
+ ==================================================
+*/
+
 const client = await db.connect();
 
 async function seedUsers() {
